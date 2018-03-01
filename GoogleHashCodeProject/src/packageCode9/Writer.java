@@ -15,7 +15,6 @@ class Writer {
             bufferedWriter.write("We are writing");
             bufferedWriter.write(" the text to the file.");
 
-            // Always close files.
             bufferedWriter.close();
         }
         catch(IOException ex) {
