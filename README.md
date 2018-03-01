@@ -1,2 +1,3 @@
 # GoogleHashCode9
-Google Hash Code Team Code9
+Google Hash Code 2018
+Team Code9
