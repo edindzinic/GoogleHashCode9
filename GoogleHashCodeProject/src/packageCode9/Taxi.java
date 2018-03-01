@@ -3,17 +3,17 @@ import java.util.*;
 
 public class Taxi {
 
-    int posX=0;
-    int posY=0;
-    int time=0;
+    static int posX=0;
+    static int posY=0;
+    static int time=0;
     List<Request> assignedRequest = new ArrayList<Request>();
 
     public int getTime() {
         return time;
     }
 
-    public void setTime(int time) {
-        this.time = time;
+    public void setTime(int t) {
+        time = t;
     }
 
 
@@ -21,16 +21,16 @@ public class Taxi {
         return posX;
     }
 
-    public void setPosX(int posX) {
-        this.posX = posX;
+    public void setPosX(int pX) {
+        posX = pX;
     }
 
     public int getPosY() {
         return posY;
     }
 
-    public void setPosY(int posY) {
-        this.posY = posY;
+    public void setPosY(int pY) {
+        posY = pY;
     }
 
     public void assignRequest(Request r) {
@@ -47,8 +47,8 @@ public class Taxi {
 
 
     public void ride(int x, int y, int t){
-        this.posX = x;
-        this.posY = y;
-        this.time = this.time + t;
+        posX = x;
+        posY = y;
+        time = time + t;
     }
 }

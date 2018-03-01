@@ -2,86 +2,86 @@ package packageCode9;
 
 public class Request {
 
-    public static int number;
-    public static int startX;
-    int startY;
-    int endX;
-    int endY;
-    int startTime;
-    int endTime;
-    int points;
+    static int number;
+    static int startX;
+    static int startY;
+    static int endX;
+    static int endY;
+    static int startTime;
+    static int endTime;
+    static int points;
 
     public int getPoints() {
         return points;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
+    public void setPoints(int p) {
+    	points = p;
     }
 
-    public Request(int number, int startX, int startY, int endX, int endY, int startTime, int endTime) {
-        this.number = number;
-        this.startX = startX;
-        this.startY = startY;
-        this.endX = endX;
-        this.endY = endY;
-        this.startTime = startTime;
-        this.endTime = endTime;
+    public Request(int n, int sX, int sY, int eX, int eY, int sT, int eT) {
+        number = n;
+        startX = sX;
+        startY = sY;
+        endX = eX;
+        endY = eY;
+        startTime = sT;
+        endTime = eT;
     }
 
     public int getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public static void setNumber(int n) {
+        number = n;
     }
 
     public int getStartX() {
         return startX;
     }
 
-    public void setStartX(int startX) {
-        this.startX = startX;
+    public static void setStartX(int sX) {
+        startX = sX;
     }
 
     public int getStartY() {
         return startY;
     }
 
-    public void setStartY(int startY) {
-        this.startY = startY;
+    public static void setStartY(int sY) {
+    	startY = sY;
     }
 
     public int getEndX() {
         return endX;
     }
 
-    public void setEndX(int endX) {
-        this.endX = endX;
+    public static void setEndX(int eX) {
+        endX = eX;
     }
 
     public int getEndY() {
         return endY;
     }
 
-    public void setEndY(int endY) {
-        this.endY = endY;
+    public static void setEndY(int eY) {
+        endY = eY;
     }
 
     public int getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(int startTime) {
-        this.startTime = startTime;
+    public static void setStartTime(int sT) {
+        startTime = sT;
     }
 
     public int getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(int endTime) {
-        this.endTime = endTime;
+    public static void setEndTime(int eT) {
+        endTime = eT;
     }
 }
