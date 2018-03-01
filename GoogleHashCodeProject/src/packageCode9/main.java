@@ -1,12 +1,9 @@
 package packageCode9;
+import java.io.*;
 
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.util.Scanner;
-
+@SuppressWarnings("unused")
 class main {
 
 	public static void main(String[] args) {
-		
 	}
 }
