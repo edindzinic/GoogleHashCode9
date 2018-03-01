@@ -2,8 +2,8 @@ package packageCode9;
 
 public class Request {
 
-    int number;
-    int startX;
+    public static int number;
+    public static int startX;
     int startY;
     int endX;
     int endY;
