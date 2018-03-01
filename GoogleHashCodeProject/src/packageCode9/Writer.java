@@ -1,25 +1,15 @@
 package packageCode9;
 import java.io.*;
 class Writer {
-	public static void write(String fileName) {
-        try {
-            FileWriter fileWriter = new FileWriter(fileName);
-
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
-            // Note that write() does not automatically
-            // append a newline character.
-            bufferedWriter.write("Hello there,");
-            bufferedWriter.write(" here is some text.");
-            bufferedWriter.newLine();
-            bufferedWriter.write("We are writing");
-            bufferedWriter.write(" the text to the file.");
-
-            bufferedWriter.close();
-        }
-        catch(IOException ex) {
-            System.out.println(
-                "Error writing to file '" + fileName + "'");
-        }
-    }
+	public static void write(int[] vehicle) {
+		try{
+			  FileWriter fstream = new FileWriter("log.txt",true);
+			  BufferedWriter out = new BufferedWriter(fstream);
+			  out.write("x");
+			  out.close();
+		  }catch (Exception e){
+			 System.err.println("Error while writing to file: " +
+		          e.getMessage());
+		  }
+	}
 }

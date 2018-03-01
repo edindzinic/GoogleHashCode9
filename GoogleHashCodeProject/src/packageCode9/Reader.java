@@ -1,28 +1,22 @@
 package packageCode9;
 
 import java.io.*;
+import java.util.Scanner;
 
 class Reader {
+
 	public static void read(String fileName) {
-		String line = null;
-		
-		// Try to read the file
+		File source = new File(fileName);
 		try {
-			FileReader fileReader = new FileReader(fileName);
-
-			BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-			while ((line = bufferedReader.readLine()) != null) {
-				System.out.println(line);
-			}
-
-			bufferedReader.close();
-			
-		// Catch if there's an exception / error
-		} catch (FileNotFoundException ex) {
-			System.out.println("Unable to open file '" + fileName + "'");
-		} catch (IOException ex) {
-			System.out.println("Error reading file '" + fileName + "'");
+			Scanner sc = new Scanner(source);
+			Global.rows = sc.nextInt();
+			Global.columns = sc.nextInt();
+			Global.vehicles = sc.nextInt();
+			Global.rides = sc.nextInt();
+			Global.bonus = sc.nextInt();
+			Global.steps = sc.nextInt();
+		} catch (FileNotFoundException e) {
+			System.out.println("Could not find or open file " + fileName + " due to: " + e);
 		}
 	}
 }
